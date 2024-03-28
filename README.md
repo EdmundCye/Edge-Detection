@@ -6,6 +6,9 @@
 
 Image matching process using the ORB (Oriented FAST and Rotated BRIEF) algorithm employed in this project to detect the lens wipe object. After preprocessing the reference (cropped lens wipe) and target images, ORB detects and describes distinctive keypoints in both images. These descriptors are then matched between the reference and target images. If a sufficient number of matches are found above a set threshold, it indicates the presence of the lens wipe object in the target image, allowing a bounding box to be drawn around the detected object using the matched keypoint locations. This efficient feature detection, description, and matching pipeline, combined with preprocessing steps like resizing and Gaussian blurring, enables accurate and robust detection of the lens wipe across various target images.
 
+## Output
+![detected_lens_wipe_random1](https://github.com/EdmundCye/Edge-Detection_Python/assets/111274518/e0aabfe2-b955-4db2-91f4-7ddabcf0ebc3) ![detected_lens_wipe_random2](https://github.com/EdmundCye/Edge-Detection_Python/assets/111274518/c896a3f9-27dd-4b91-89d7-041b0b61cde0)
+
 
 ## Approach 
 1. Image Acquisition: Capture images of the lens wipe object against a white background, both alone and alongside other random objects like watches, coins, and necklaces.
